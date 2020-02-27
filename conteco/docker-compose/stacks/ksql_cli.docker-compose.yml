@@ -1,0 +1,27 @@
+---
+version: '3'
+services:
+
+# START SERVICE ksqldb-cli.base
+  ksqldb-cli:
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM}/${CONTECO_ECOSYSTEM}.ksqldb-cli.base:0.7.0
+    environment: []
+    command: []
+    volumes: []
+    ports: []
+    networks: [${CONTECO_TYPE}_overlay]
+    labels: [${CONTECO_DC_KSQL_CLI_LABELS}]
+    deploy:
+      mode: replicated
+      resources:
+        limits:
+          cpus: '${CONTECO_DC_KSQL_CLI_DEPLOY_RESOURCES_LIMITS_CPUS}'
+          memory: '${CONTECO_DC_KSQL_CLI_DEPLOY_RESOURCES_LIMITS_MEMORY}'
+        reservations:
+          cpus: '${CONTECO_DC_KSQL_CLI_DEPLOY_RESOURCES_RESERVATIONS_CPUS}'
+          memory: '${CONTECO_DC_KSQL_CLI_DEPLOY_RESOURCES_RESERVATIONS_MEMORY}'
+      labels: [${CONTECO_DC_KSQL_CLI_DEPLOY_LABELS}]
+# END SERVICE ksqldb-cli.base
+
+volumes: {}
+networks: {${CONTECO_TYPE}_overlay: { external: true }}
