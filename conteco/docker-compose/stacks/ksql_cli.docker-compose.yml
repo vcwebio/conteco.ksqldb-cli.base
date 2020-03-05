@@ -9,8 +9,7 @@ services:
     command: []
     volumes: []
     ports: []
-    networks: [${CONTECO_TYPE}_overlay]
-    labels: [${CONTECO_DC_KSQL_CLI_LABELS}]
+    networks: [${CONTECO_NETWORKLOCAL}_overlay]
     deploy:
       mode: replicated
       resources:
@@ -24,4 +23,4 @@ services:
 # END SERVICE ksqldb-cli.base
 
 volumes: {}
-networks: {${CONTECO_TYPE}_overlay: { external: true }}
+networks: {${CONTECO_NETWORKLOCAL}_overlay: { external: true }}

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # START CONFIGURATION
-export CONTECO_DC_GLOBAL_STACKS="ksql-cli.base"
+export CONTECO_DC_GLOBAL_PACKAGE_CONTECO="ksqldb-cli.base"
 export CONTECO_DC_GLOBAL_STACKNAMES="ksql_cli"
 export CONTECO_DC_GLOBAL_BOOTSTACKS=""
 export CONTECO_DC_GLOBAL_RUNSTACKS="ksql_cli"
