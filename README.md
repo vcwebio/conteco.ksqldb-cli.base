@@ -1,6 +1,6 @@
-# `ksqldb-cli.base` - ContEco
+# `ksql_cli.base` - ContEco
 
-Confluent ksqlDB CLI base image, using default configuration.
+Confluent KSQL CLI base image, using default configuration.
 See `conteco.docs.overview` for more information on the ContEco ecosystem.
 
 ## Configuration Changes
@@ -9,4 +9,4 @@ None.
 
 ## Tags
 
-* 0.7.0
+* 5.4.0
