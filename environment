@@ -5,7 +5,7 @@ export CONTECO_DESCRIPTION="Confluent ksqlDB CLI base image, using default confi
 
 export CONTECO_TYPE="ksqldb_cli"
 export CONTECO_NAME="base"
-export CONTECO_TAG="0.7.0"
+export CONTECO_TAG="0.9.0"
 
-export CONTECO_BASE="external.ksqldb_cli:0.7.0"
+export CONTECO_BASE="external.ksqldb_cli:0.9.0"
 export CONTECO_BUILD="image-base"
