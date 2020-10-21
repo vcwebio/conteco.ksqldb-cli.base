@@ -4,7 +4,7 @@ services:
 
 # START SERVICE ksqldb_cli.base
   ksqldb_cli:
-    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.ksqldb_cli.base:0.12.0
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.ksqldb_cli.base:0.12.0 
     environment: []
     command: []
     volumes: []
